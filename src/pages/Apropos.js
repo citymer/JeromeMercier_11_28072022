@@ -1,10 +1,10 @@
 import React from 'react'
-import Navigation from '../components/Navigation'
+import Header from '../components/Header'
 
 const Apropos = () => {
   return (
     <div>
-      <Navigation />
+      <Header />
       <h1>apropos</h1>
     </div>
   )
