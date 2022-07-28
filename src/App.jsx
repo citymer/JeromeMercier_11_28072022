@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './styles/index.scss'
 import Apropos from './pages/Apropos'
 import Erreur404 from './pages/Erreur404'
 import FicheLogement from './pages/FicheLogement'
 import Home from './pages/Home'
-import './styles/index.scss'
 
 const App = () => {
   return (

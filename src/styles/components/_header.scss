@@ -1,4 +1,4 @@
-@import './utils/variables';
+@import '../utils/variables';
 
 header {
   width: 1240px;
@@ -7,17 +7,20 @@ header {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
-}
-
-.navigation ul {
-  display: flex;
-  justify-content: space-between;
-  width: 309px;
-  list-style-type: none;
-  a {
-    font-size: 24px;
-    font-weight: 500;
-    margin-left: 70px;
-    color: $couleur-primaire;
+  .navigation ul {
+    display: flex;
+    justify-content: space-between;
+    width: 309px;
+    list-style-type: none;
+    a {
+      font-size: 24px;
+      font-weight: 500;
+      margin-left: 70px;
+      color: $couleur-primaire;
+      text-decoration: none;
+    }
+    a [aria-current] {
+      text-decoration: underline;
+    }
   }
 }

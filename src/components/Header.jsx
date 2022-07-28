@@ -9,10 +9,10 @@ const header = () => {
       <div className="navigation">
         <ul>
           <Link to="/">
-            <li>Accueil</li>
+            <li aria-current="page">Accueil</li>
           </Link>
           <Link to="/apropos">
-            <li>A propos</li>
+            <li aria-current="page">A propos</li>
           </Link>
         </ul>
       </div>
