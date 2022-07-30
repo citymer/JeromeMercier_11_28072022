@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import SectionTwo from '../components/SectionTwo'
 
@@ -7,6 +8,7 @@ const Apropos = () => {
     <div>
       <Header />
       <SectionTwo />
+      <Footer />
     </div>
   )
 }
