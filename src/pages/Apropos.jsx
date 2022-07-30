@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '../components/Header'
+import SectionTwo from '../components/SectionTwo'
 
 const Apropos = () => {
   return (
     <div>
       <Header />
-      <h1>apropos</h1>
+      <SectionTwo />
     </div>
   )
 }
