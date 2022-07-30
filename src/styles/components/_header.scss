@@ -19,7 +19,7 @@ header {
       color: $couleur-primaire;
       text-decoration: none;
     }
-    a [aria-current] {
+    [aria-current] {
       text-decoration: underline;
     }
   }

@@ -1,6 +1,6 @@
 import React from 'react'
 import LOGO from '../assets/LOGO.png'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const header = () => {
   return (
@@ -8,12 +8,12 @@ const header = () => {
       <img src={LOGO} alt="logo" />
       <div className="navigation">
         <ul>
-          <Link to="/">
-            <li aria-current="page">Accueil</li>
-          </Link>
-          <Link to="/apropos">
-            <li aria-current="page">A propos</li>
-          </Link>
+          <NavLink to="/">
+            <li>Accueil</li>
+          </NavLink>
+          <NavLink to="/apropos">
+            <li>A propos</li>
+          </NavLink>
         </ul>
       </div>
     </header>

@@ -1,1 +1,1 @@
-header{width:1240px;height:68;display:flex}body{margin:0}#root{width:1440px}
+header{width:1240px;height:68;margin:0 auto;margin-top:40px;display:flex;justify-content:space-between}header .navigation ul{display:flex;justify-content:space-between;width:309px;list-style-type:none}header .navigation ul a{font-size:24px;font-weight:500;margin-left:70px;color:#ff6060;text-decoration:none}.active{text-decoration:underline}.background{width:100%;display:flex;justify-content:center}.sectionImage{margin-top:69px}body{margin:0}#root{width:1440px;margin:0 auto}
