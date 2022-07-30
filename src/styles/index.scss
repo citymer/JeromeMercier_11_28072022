@@ -1,5 +1,5 @@
 @import './components/header.scss';
-@import './components/section.scss';
+@import './components/sectionOne.scss';
 
 body {
   margin: 0;
@@ -7,4 +7,6 @@ body {
 #root {
   width: 1440px;
   margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
