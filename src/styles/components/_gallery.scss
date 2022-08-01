@@ -3,14 +3,29 @@
   margin-top: 335px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px;
-  background-color: #f6f6f6;
+  background-color: $couleur-background;
   border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-self: center;
+  justify-self: center;
+}
+.galerie a {
+  width: 340px;
+  height: 340px;
+  text-decoration: none;
 }
 .imgLocation {
   width: 340px;
   height: 340px;
-  margin: 0;
+  margin-top: 0px;
   border-radius: 10px;
-  background-color: brown;
+  object-fit: cover;
+  grid-area: 2/1/2/4;
+}
+figcaption {
+  font-size: 18px;
+  margin-top: -50px;
+  color: $couleur-blanche;
+  text-align: center;
 }

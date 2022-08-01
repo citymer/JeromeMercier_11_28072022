@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Gallery = () => {
+const Gallery = ({ id, titre, image }) => {
   return (
-    <div className="galerie">
-      <figure className="imgLocation">
-        <img src="" alt="" />
-        <figcaption></figcaption>
+    <Link to={`/fiche-logement/${id}`}>
+      <figure>
+        <img className="imgLocation" src={image} alt="location" />
+        <figcaption>{titre}</figcaption>
       </figure>
-    </div>
+    </Link>
   )
 }
 
