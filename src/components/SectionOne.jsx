@@ -5,11 +5,13 @@ const Section = () => {
   return (
     <div>
       <div className="section">
-        <div className="contentImage">
-          <img className="background" src={Background} alt="" />
-        </div>
-        <div className="contentTitre">
-          <h1>Chez vous,partout et ailleurs</h1>
+        <div className="centrage">
+          <div className="contentImage">
+            <img className="img" src={Background} alt="" />
+          </div>
+          <div className="contentTitre">
+            <h1>Chez vous,partout et ailleurs</h1>
+          </div>
         </div>
       </div>
     </div>

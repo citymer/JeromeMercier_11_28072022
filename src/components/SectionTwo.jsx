@@ -4,7 +4,7 @@ import Kalen from '../assets/kalen.png'
 const SectionTwo = () => {
   return (
     <div className="sectiontwo">
-      <img className="background" src={Kalen} alt="" />
+      <img className="img" src={Kalen} alt="" />
     </div>
   )
 }

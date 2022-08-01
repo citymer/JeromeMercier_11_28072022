@@ -1,13 +1,14 @@
 @import './components/header.scss';
 @import './components/sectionOne.scss';
 @import './components/erreur404.scss';
+@import './components/gallery';
 @import './components/footer';
 
 body {
   margin: 0;
 }
 #root {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
   font-family: 'Montserrat', sans-serif;

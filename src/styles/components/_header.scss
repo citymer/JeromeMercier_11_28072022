@@ -1,17 +1,17 @@
 @import '../utils/variables';
 
 header {
-  width: 1240px;
+  max-width: 1240px;
   height: 68;
   margin: 0 auto;
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+
   .navigation ul {
     display: flex;
-    justify-content: space-between;
-    width: 309px;
     list-style-type: none;
+
     a {
       font-size: 24px;
       font-weight: 500;
