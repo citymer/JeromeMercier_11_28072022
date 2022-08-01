@@ -1,4 +1,5 @@
 @import '../utils/variables';
+@import '../utils/mixins';
 
 header {
   max-width: 1240px;
@@ -7,10 +8,30 @@ header {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
-
+  @include desktop {
+    max-width: 1000px;
+  }
+  @include tablet {
+    max-width: 792px;
+  }
+  @include portraitmobile {
+    max-width: 568px;
+  }
+  @include mobile {
+    max-width: 376px;
+  }
+  .logo {
+    @include mobile {
+      width: 145px;
+      height: 47px;
+    }
+  }
   .navigation ul {
     display: flex;
     list-style-type: none;
+    @include mobile {
+      padding-left: 10px;
+    }
 
     a {
       font-size: 24px;
@@ -18,6 +39,10 @@ header {
       margin-left: 48px;
       color: $couleur-primaire;
       text-decoration: none;
+      @include mobile {
+        font-size: 12px;
+        margin-left: 10px;
+      }
     }
     [aria-current] {
       text-decoration: underline;

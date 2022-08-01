@@ -1,3 +1,5 @@
+@import '../utils/mixins';
+
 .section {
   position: relative;
   margin: 0 auto;
@@ -12,6 +14,18 @@
   position: absolute;
   z-index: 1;
   object-fit: cover;
+  @include desktop {
+    max-width: 1000px;
+  }
+  @include tablet {
+    max-width: 792px;
+  }
+  @include portraitmobile {
+    max-width: 568px;
+  }
+  @include mobile {
+    max-width: 376px;
+  }
 }
 .contentTitre {
   position: absolute;
@@ -31,9 +45,27 @@
   align-items: center;
   border-radius: 25px;
   z-index: 1;
+  @include tablet {
+    height: 180px;
+  }
+  @include portraitmobile {
+    height: 160px;
+  }
+  @include portraitmobile {
+    height: 111px;
+  }
 }
 h1 {
   font-size: 48px;
   font-weight: 500;
   color: $couleur-blanche;
+  @include tablet {
+    font-size: 34px;
+  }
+  @include portraitmobile {
+    font-size: 28px;
+  }
+  @include portraitmobile {
+    font-size: 24px;
+  }
 }
