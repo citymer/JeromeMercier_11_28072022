@@ -1,8 +1,9 @@
 import React from 'react'
 import Vector from '../assets/Vector.png'
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 
-const Dropdown = () => {
+const Dropdown = ({ titre, description }) => {
   const [toggle, setToggle] = useState(false)
   const toggleFunction = () => {
     setToggle(!toggle)
@@ -12,20 +13,20 @@ const Dropdown = () => {
       <div>
         <div className="contentDropdown">
           <div className="dropdown">
-            <h2>Fiabilité</h2>
+            <h2>{titre}</h2>
             <img
               className="chevronDown"
               src={Vector}
               onClick={toggleFunction}
               style={{ transform: toggle ? 'rotate(0.5turn)' : 'rotate(0)' }}
-              alt="chevron down"
+              alt="chevron"
             />
           </div>
           <p
             className="sommaire"
             style={{ display: toggle ? 'block' : 'none' }}
           >
-            ererererer
+            {description}
           </p>
         </div>
       </div>
@@ -33,4 +34,8 @@ const Dropdown = () => {
   )
 }
 
+Dropdown.propTypes = {
+  titre: PropTypes.string,
+  description: PropTypes.string,
+}
 export default Dropdown
