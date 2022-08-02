@@ -1,4 +1,5 @@
 @import '../utils/variables';
+
 .dropdown {
   width: 1023px;
   height: 47px;
@@ -19,9 +20,19 @@ h2 {
   margin-right: 20px;
 }
 .contentDropdown {
+  width: 1023px;
   background-color: $couleur-background;
   border-radius: 0px 0px 5px 5px;
 }
+.contentSommaire {
+  width: 98%;
+}
 .sommaire {
   display: none;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 18px;
+  padding-bottom: 20px;
+  color: $couleur-primaire;
 }

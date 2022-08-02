@@ -22,12 +22,14 @@ const Dropdown = ({ titre, description }) => {
               alt="chevron"
             />
           </div>
-          <p
-            className="sommaire"
-            style={{ display: toggle ? 'block' : 'none' }}
-          >
-            {description}
-          </p>
+          <div className="contentSommaire">
+            <p
+              className="sommaire"
+              style={{ display: toggle ? 'block' : 'none' }}
+            >
+              {description}
+            </p>
+          </div>
         </div>
       </div>
     </div>
