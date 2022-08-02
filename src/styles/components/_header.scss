@@ -9,16 +9,16 @@ header {
   display: flex;
   justify-content: space-between;
   @include desktop {
-    max-width: 1000px;
+    max-width: 970px;
   }
   @include tablet {
-    max-width: 792px;
+    max-width: 740px;
   }
   @include portraitmobile {
     max-width: 568px;
   }
   @include mobile {
-    max-width: 376px;
+    max-width: 335px;
   }
   .logo {
     @include mobile {
