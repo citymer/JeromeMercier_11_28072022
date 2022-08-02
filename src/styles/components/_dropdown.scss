@@ -1,0 +1,27 @@
+@import '../utils/variables';
+.dropdown {
+  width: 1023px;
+  height: 47px;
+  background-color: $couleur-primaire;
+  border-radius: 5px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h2 {
+  color: $couleur-blanche;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.chevronDown {
+  margin-right: 20px;
+}
+.contentDropdown {
+  background-color: $couleur-background;
+  border-radius: 0px 0px 5px 5px;
+}
+.sommaire {
+  display: none;
+}
