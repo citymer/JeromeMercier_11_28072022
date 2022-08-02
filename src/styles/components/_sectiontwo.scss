@@ -7,18 +7,20 @@
   border-radius: 25px;
   @include desktop {
     max-width: 970px;
+    height: 223px;
   }
   @include tablet {
-    height: 180px;
+    height: 223px;
     max-width: 740px;
   }
   @include portraitmobile {
-    height: 111px;
+    height: 223px;
     max-width: 568px;
   }
 
   @include mobile {
     margin-top: 40px;
-    max-width: 335px;
+    max-width: 336px;
+    height: 223px;
   }
 }

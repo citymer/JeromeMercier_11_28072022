@@ -1,5 +1,8 @@
 @import '../utils/variables';
-
+@import '../utils/mixins';
+.blocDropdown {
+  height: 100%;
+}
 .dropdown {
   width: 1023px;
   height: 47px;
@@ -9,20 +12,50 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include desktop {
+    width: 800px;
+  }
+  @include tablet {
+    width: 580px;
+  }
+  @include portraitmobile {
+    width: 380px;
+  }
+  @include mobile {
+    width: 335px;
+    height: 30px;
+  }
 }
 h2 {
   color: $couleur-blanche;
   font-size: 24px;
   font-weight: 500;
   margin-left: 20px;
+  @include mobile {
+    font-size: 13px;
+  }
 }
 .chevronDown {
   margin-right: 20px;
+  height: 9px;
+  width: 15px;
 }
 .contentDropdown {
   width: 1023px;
   background-color: $couleur-background;
   border-radius: 0px 0px 5px 5px;
+  @include desktop {
+    width: 800px;
+  }
+  @include tablet {
+    width: 580px;
+  }
+  @include portraitmobile {
+    width: 380px;
+  }
+  @include mobile {
+    width: 335px;
+  }
 }
 .contentSommaire {
   width: 98%;
