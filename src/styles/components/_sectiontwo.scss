@@ -1,0 +1,24 @@
+@import '../utils/mixins';
+
+.imgSection {
+  filter: brightness(70%);
+  object-fit: cover;
+  margin-top: 69px;
+  border-radius: 25px;
+  @include desktop {
+    max-width: 970px;
+  }
+  @include tablet {
+    height: 180px;
+    max-width: 740px;
+  }
+  @include portraitmobile {
+    height: 111px;
+    max-width: 568px;
+  }
+
+  @include mobile {
+    margin-top: 40px;
+    max-width: 335px;
+  }
+}

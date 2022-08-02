@@ -3,8 +3,8 @@ import Kalen from '../assets/kalen.png'
 
 const SectionTwo = () => {
   return (
-    <div className="sectiontwo">
-      <img className="img" src={Kalen} alt="" />
+    <div className="centrage">
+      <img className="imgSection" src={Kalen} alt="" />
     </div>
   )
 }
