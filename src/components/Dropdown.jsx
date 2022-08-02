@@ -17,6 +17,7 @@ const Dropdown = () => {
               className="chevronDown"
               src={Vector}
               onClick={toggleFunction}
+              style={{ transform: toggle ? 'rotate(0.5turn)' : 'rotate(0)' }}
               alt="chevron down"
             />
           </div>
