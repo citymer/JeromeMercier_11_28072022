@@ -69,3 +69,18 @@ h2 {
   padding-bottom: 20px;
   color: $couleur-primaire;
 }
+.padding {
+  padding-top: 200px;
+  @include desktop {
+    padding-top: 310px;
+  }
+  @include tablet {
+    padding-top: 400px;
+  }
+  @include portraitmobile {
+    padding-top: 100px;
+  }
+  @include mobile {
+    padding-top: 200px;
+  }
+}

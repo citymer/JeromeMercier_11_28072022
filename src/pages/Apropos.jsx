@@ -38,7 +38,9 @@ const Apropos = () => {
           description={type.description}
         />
       ))}
-      <Footer />
+      <div className="padding">
+        <Footer />
+      </div>
     </div>
   )
 }
