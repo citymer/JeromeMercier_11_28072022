@@ -12,7 +12,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
-        <Route path="/fiche-logement" element={<FicheLogement />} />
+        <Route
+          path="/fiche-logement/:idLogement/*"
+          element={<FicheLogement />}
+        />
         <Route path="*" element={<Erreur404 />} />
       </Routes>
     </BrowserRouter>

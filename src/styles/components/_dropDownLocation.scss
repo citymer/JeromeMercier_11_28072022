@@ -1,0 +1,58 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.blocDropdowns {
+  display: flex;
+  justify-content: space-between;
+  width: 1240px;
+  margin-top: 30px;
+  @include desktop {
+    width: 970px;
+  }
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.dropdownLocation {
+  width: 582px;
+  height: 52px;
+  background-color: $couleur-primaire;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include desktop {
+    width: 400px;
+  }
+  @include tablet {
+    width: 740px;
+  }
+  @include portraitmobile {
+    width: 568px;
+  }
+  @include mobile {
+    width: 335px;
+    height: 30px;
+  }
+}
+.contentDropdownLocation {
+  width: 582px;
+  border-radius: 0px 0px 5px 5px;
+  @include desktop {
+    width: 400px;
+  }
+  @include tablet {
+    width: 740px;
+    margin-top: 20px;
+  }
+  @include portraitmobile {
+    width: 568px;
+  }
+  @include mobile {
+    width: 335px;
+  }
+}
+.chevron {
+  margin-right: 20px;
+}
