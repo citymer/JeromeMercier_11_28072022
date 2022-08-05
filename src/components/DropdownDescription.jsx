@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Vector from '../assets/Vector.png'
 
-const DropdownDescription = () => {
+const DropdownDescription = ({ id, titre }) => {
   const [toggle, setToggle] = useState(false)
   const toggleFunctions = () => {
     setToggle(!toggle)
@@ -23,8 +23,12 @@ const DropdownDescription = () => {
         />
       </div>
       <div className="contentSommaire">
-        <p className="sommaire" style={{ display: toggle ? 'block' : 'none' }}>
-          rr
+        <p
+          id={id}
+          className="sommaire"
+          style={{ display: toggle ? 'block' : 'none' }}
+        >
+          rrr
         </p>
       </div>
     </div>
