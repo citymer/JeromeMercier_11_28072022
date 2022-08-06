@@ -2,11 +2,12 @@ import React from 'react'
 import { useState } from 'react'
 import Vector from '../assets/Vector.png'
 
-const DropdownDescription = ({ id, titre }) => {
+const DropdownDescription = ({ id, description }) => {
   const [toggle, setToggle] = useState(false)
   const toggleFunctions = () => {
     setToggle(!toggle)
   }
+
   return (
     <div
       className="contentDropdownLocation"
