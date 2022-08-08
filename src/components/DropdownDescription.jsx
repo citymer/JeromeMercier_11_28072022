@@ -14,7 +14,7 @@ const DropdownDescription = ({ id, description }) => {
       style={{ backgroundColor: toggle ? '#F6F6F6' : '' }}
     >
       <div className="dropdownLocation">
-        <h2>Description</h2>
+        <h2 className="h2">Description</h2>
         <img
           className="chevron"
           src={Vector}

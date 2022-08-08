@@ -13,7 +13,7 @@ const DropdownEquipements = () => {
       style={{ backgroundColor: toggles ? '#F6F6F6' : '' }}
     >
       <div className="dropdownLocation">
-        <h2>Équipements</h2>
+        <h2 className="h2">Équipements</h2>
         <img
           className="chevron"
           src={Vector}

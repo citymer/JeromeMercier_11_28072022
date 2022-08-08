@@ -13,7 +13,7 @@ const Dropdown = ({ titre, description }) => {
       <div>
         <div className="contentDropdown">
           <div className="dropdown">
-            <h2>{titre}</h2>
+            <h2 className="title">{titre}</h2>
             <img
               className="chevronDown"
               src={Vector}

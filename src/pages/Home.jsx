@@ -6,14 +6,18 @@ import useFetch from '../UseFetch'
 import Gallery from '../components/Gallery'
 
 const Home = () => {
-  const { locationList } = useFetch('./data/locationList.json')
+  const { data, error } = useFetch('./data/locationList.json')
+  if (error) {
+    return <span>Oups il y a eu un problème</span>
+  }
+
   return (
     <div>
       <Header />
       <main>
         <SectionOne />
         <div className="galerie">
-          {locationList.map((location) => (
+          {data.map((location) => (
             <Gallery
               key={location.id}
               id={location.id}

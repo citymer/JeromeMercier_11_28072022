@@ -10,7 +10,7 @@ const Section = () => {
             <img className="img" src={Background} alt="" />
           </div>
           <div className="contentTitre">
-            <h1>Chez vous,partout et ailleurs</h1>
+            <h1 className="titre">Chez vous,partout et ailleurs</h1>
           </div>
         </div>
       </div>

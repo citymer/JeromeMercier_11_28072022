@@ -1,16 +1,25 @@
 import React from 'react'
+import logo from '../logo.svg'
+import star from '../assets/star.png'
 
 const PresentationLocation = () => {
   return (
-    <div>
+    <div className="contentInfo">
       <div className="titreEtTag">
-        <p>blabla</p>
-        <p>youhou</p>
-        <div className="tag"></div>
+        <h1>Cozy loft on the Canal Saint-Martin</h1>
+        <h2>Paris, île-de-France</h2>
+        <div className="tag">
+          <p>Cozy</p>
+        </div>
       </div>
       <div className="portraitEtEtoile">
-        <div className="nomEtPortrait"></div>
-        <div className="etoiles"></div>
+        <div className="nomEtPortrait">
+          <h4>Alexandre Dumas</h4>
+          <img className="portrait" src={logo} alt="portrait" />
+        </div>
+        <div className="etoiles">
+          <img src={star} alt="etoile" />
+        </div>
       </div>
     </div>
   )

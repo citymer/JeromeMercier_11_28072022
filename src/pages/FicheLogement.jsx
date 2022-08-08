@@ -3,16 +3,14 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import DropdownLogement from '../components/DropdownLogement'
 import PresentationLocation from '../components/PresentationLocation'
-import useFetch from '../UseFetch'
+import Carroussel from '../components/Carroussel'
 
 const FicheLogement = () => {
-  const { locationList } = useFetch('./data/locationList.json')
-
   return (
     <div>
       <Header />
+      <Carroussel />
       <PresentationLocation />
-
       <DropdownLogement />
       <Footer />
     </div>

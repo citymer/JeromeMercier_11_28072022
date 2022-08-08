@@ -1,0 +1,51 @@
+@import '../utils/variables';
+
+.contentInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 1240px;
+  margin: 0 auto;
+}
+.titreEtTag {
+}
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: $couleur-primaire;
+  margin-bottom: 0px;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: $couleur-primaire;
+  margin-top: 10px;
+}
+.tag {
+  width: 115px;
+  height: 25px;
+  background-color: $couleur-primaire;
+  color: $couleur-blanche;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nomEtPortrait {
+  display: flex;
+}
+h4 {
+  width: 70px;
+  font-size: 18px;
+  margin-right: 40px;
+  font-weight: 500;
+  color: $couleur-primaire;
+}
+.portrait {
+  width: 64px;
+  height: 64px;
+  background-color: aqua;
+  border-radius: 50%;
+  margin-top: 15px;
+}
