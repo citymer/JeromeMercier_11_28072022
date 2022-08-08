@@ -3,6 +3,20 @@
   height: 415px;
   margin: 0 auto;
   position: relative;
+  @include desktop {
+    width: 970px;
+  }
+  @include tablet {
+    width: 740px;
+  }
+  @include portraitmobile {
+    width: 568px;
+    height: 300px;
+  }
+  @include mobile {
+    width: 335px;
+    height: 255px;
+  }
 }
 
 .appartement {
@@ -12,6 +26,20 @@
   object-fit: cover;
   top: -10pxpx;
   z-index: 1;
+  @include desktop {
+    width: 970px;
+  }
+  @include tablet {
+    width: 740px;
+  }
+  @include portraitmobile {
+    width: 568px;
+    height: 300px;
+  }
+  @include mobile {
+    width: 335px;
+    height: 255px;
+  }
 }
 .precedent,
 .suivant {
@@ -19,12 +47,38 @@
   background-color: transparent;
   border: 0;
   z-index: 2;
+  & img {
+    @include portraitmobile {
+      width: 20px;
+      height: 40px;
+    }
+    @include portraitmobile {
+      width: 11px;
+      height: 20px;
+    }
+  }
 }
 .precedent {
   top: 40%;
   right: 93%;
+  @include tablet {
+    right: 90%;
+  }
+  @include portraitmobile {
+    top: 45%;
+  }
 }
 .suivant {
   left: 93%;
   bottom: 40%;
+  @include tablet {
+    left: 90%;
+  }
+  @include portraitmobile {
+    bottom: 45%;
+  }
+  @include mobile {
+    bottom: 45%;
+    left: 90%;
+  }
 }

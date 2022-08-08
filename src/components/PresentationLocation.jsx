@@ -9,7 +9,7 @@ const PresentationLocation = () => {
         <h1>Cozy loft on the Canal Saint-Martin</h1>
         <h2>Paris, île-de-France</h2>
         <div className="tag">
-          <p>Cozy</p>
+          <p className="textTag">Cozy</p>
         </div>
       </div>
       <div className="portraitEtEtoile">
@@ -18,7 +18,7 @@ const PresentationLocation = () => {
           <img className="portrait" src={logo} alt="portrait" />
         </div>
         <div className="etoiles">
-          <img src={star} alt="etoile" />
+          <img className="star" src={star} alt="etoile" />
         </div>
       </div>
     </div>

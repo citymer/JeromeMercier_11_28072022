@@ -61,4 +61,7 @@
   color: $couleur-blanche;
   font-size: 18px;
   font-weight: 500;
+  @include mobile {
+    margin-top: 15px;
+  }
 }
