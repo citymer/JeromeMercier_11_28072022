@@ -3,13 +3,19 @@ import star from '../assets/star.png'
 
 const PresentationLocation = (logement) => {
   const maison = logement.logement
+  const tag = maison.tags
+  console.log(tag)
   return (
     <div className="contentInfo">
       <div className="titreEtTag">
         <h1>{maison.title}</h1>
         <h2>{maison.location}</h2>
-        <div className="tag">
-          <p className="textTag">Cozy</p>
+        <div className="contentTag">
+          {tag.map((tague, index) => (
+            <div className="tag" key={index}>
+              <p className="textTag">{tague}</p>
+            </div>
+          ))}
         </div>
       </div>
       <div className="portraitEtEtoile">
