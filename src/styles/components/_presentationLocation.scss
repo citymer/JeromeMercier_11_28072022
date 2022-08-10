@@ -118,6 +118,7 @@ h4 {
   }
 }
 .etoiles {
+  display: flex;
   width: 160px;
   .star {
     @include mobile {

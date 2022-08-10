@@ -1,10 +1,16 @@
 import React from 'react'
-import star from '../assets/star.png'
+import starRed from '../assets/starRed.png'
+import stargrey from '../assets/stargrey.png'
 
 const PresentationLocation = (logement) => {
   const maison = logement.logement
   const tag = maison.tags
-  console.log(tag)
+  const note = maison.rating
+
+  const etoileRouge = <img className="star" src={starRed} alt="etoile" />
+  const etoileVide = <img className="star" src={stargrey} alt="etoile" />
+  const totalEtoile = [1, 2, 3, 4, 5]
+  console.log(note)
   return (
     <div className="contentInfo">
       <div className="titreEtTag">
@@ -24,7 +30,13 @@ const PresentationLocation = (logement) => {
           <img className="portrait" src={maison.host.picture} alt="portrait" />
         </div>
         <div className="etoiles">
-          <img className="star" src={star} alt="etoile" />
+          {totalEtoile.map((rangeElem) =>
+            note >= rangeElem ? (
+              <span key={rangeElem.toString()}> {etoileRouge} </span>
+            ) : (
+              <span key={rangeElem.toString()}> {etoileVide} </span>
+            )
+          )}
         </div>
       </div>
     </div>
