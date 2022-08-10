@@ -8,7 +8,7 @@ const DropdownEquipements = (logement) => {
     setToggle(!toggles)
   }
   const equipements = logement.logement
-  console.log(equipements)
+
   return (
     <div
       className="contentDropdownLocation"
@@ -29,8 +29,8 @@ const DropdownEquipements = (logement) => {
           className="sommaire liste"
           style={{ display: toggles ? 'block' : 'none' }}
         >
-          {equipements.map((liste) => (
-            <li>{liste}</li>
+          {equipements.map((liste, index) => (
+            <li key={index}>{liste}</li>
           ))}
         </ul>
       </div>
