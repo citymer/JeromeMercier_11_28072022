@@ -3,7 +3,7 @@ import precedent from '../assets/precedent.png'
 import suivant from '../assets/suivant.png'
 import Background from '../assets/Background.png'
 
-const Carroussel = () => {
+const Carroussel = (logement) => {
   return (
     <div className="carroussel">
       <button className="precedent">

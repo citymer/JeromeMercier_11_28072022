@@ -2,9 +2,11 @@ import { useState, useEffect } from 'react'
 
 const useFetch = (url) => {
   const [data, setData] = useState([])
+  const [isLoading, setLoading] = useState(true)
   const [error, setError] = useState(false)
   useEffect(() => {
-    async function fetchLocations() {
+    if (!url) return setLoading(true)
+    async function fetchData() {
       try {
         const response = await fetch(url)
         const data = await response.json()
@@ -12,12 +14,13 @@ const useFetch = (url) => {
       } catch (err) {
         console.log('----- Error -----', err)
         setError(true)
+      } finally {
+        setLoading(false)
       }
     }
-    fetchLocations()
+    fetchData()
   }, [url])
-
-  return { data, error }
+  return { data, isLoading, error }
 }
 
 export default useFetch

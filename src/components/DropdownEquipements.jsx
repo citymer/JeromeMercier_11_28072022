@@ -2,11 +2,13 @@ import React from 'react'
 import { useState } from 'react'
 import Vector from '../assets/Vector.png'
 
-const DropdownEquipements = () => {
+const DropdownEquipements = (logement) => {
   const [toggles, setToggle] = useState(false)
   const toggleFunctions = () => {
     setToggle(!toggles)
   }
+  const equipements = logement.logement
+  console.log(equipements)
   return (
     <div
       className="contentDropdownLocation"
@@ -23,9 +25,14 @@ const DropdownEquipements = () => {
         />
       </div>
       <div className="contentSommaire">
-        <p className="sommaire" style={{ display: toggles ? 'block' : 'none' }}>
-          rr
-        </p>
+        <ul
+          className="sommaire liste"
+          style={{ display: toggles ? 'block' : 'none' }}
+        >
+          {equipements.map((liste) => (
+            <li>{liste}</li>
+          ))}
+        </ul>
       </div>
     </div>
   )

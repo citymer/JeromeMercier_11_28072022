@@ -1,21 +1,21 @@
 import React from 'react'
-import logo from '../logo.svg'
 import star from '../assets/star.png'
 
-const PresentationLocation = () => {
+const PresentationLocation = (logement) => {
+  const maison = logement.logement
   return (
     <div className="contentInfo">
       <div className="titreEtTag">
-        <h1>Cozy loft on the Canal Saint-Martin</h1>
-        <h2>Paris, île-de-France</h2>
+        <h1>{maison.title}</h1>
+        <h2>{maison.location}</h2>
         <div className="tag">
           <p className="textTag">Cozy</p>
         </div>
       </div>
       <div className="portraitEtEtoile">
         <div className="nomEtPortrait">
-          <h4>Alexandre Dumas</h4>
-          <img className="portrait" src={logo} alt="portrait" />
+          <h4>{maison.host.name}</h4>
+          <img className="portrait" src={maison.host.picture} alt="portrait" />
         </div>
         <div className="etoiles">
           <img className="star" src={star} alt="etoile" />

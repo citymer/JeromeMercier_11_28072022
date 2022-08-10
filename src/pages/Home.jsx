@@ -2,11 +2,12 @@ import React from 'react'
 import Header from '../components/Header'
 import SectionOne from '../components/SectionOne'
 import Footer from '../components/Footer'
-import useFetch from '../UseFetch'
+import useFetch from '../data/UseFetch'
 import Gallery from '../components/Gallery'
 
 const Home = () => {
-  const { data, error } = useFetch('./data/locationList.json')
+  const { data, error } = useFetch('data/locationList.json')
+
   if (error) {
     return <span>Oups il y a eu un problème</span>
   }

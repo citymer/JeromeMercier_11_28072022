@@ -16,6 +16,7 @@ const App = () => {
           path="/fiche-logement/:idLogement/*"
           element={<FicheLogement />}
         />
+
         <Route path="*" element={<Erreur404 />} />
       </Routes>
     </BrowserRouter>
