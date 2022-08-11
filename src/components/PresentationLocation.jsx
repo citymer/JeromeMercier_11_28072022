@@ -10,7 +10,7 @@ const PresentationLocation = (logement) => {
   const etoileRouge = <img className="star" src={starRed} alt="etoile" />
   const etoileVide = <img className="star" src={stargrey} alt="etoile" />
   const totalEtoile = [1, 2, 3, 4, 5]
-  console.log(note)
+
   return (
     <div className="contentInfo">
       <div className="titreEtTag">
@@ -30,11 +30,11 @@ const PresentationLocation = (logement) => {
           <img className="portrait" src={maison.host.picture} alt="portrait" />
         </div>
         <div className="etoiles">
-          {totalEtoile.map((rangeElem) =>
-            note >= rangeElem ? (
-              <span key={rangeElem.toString()}> {etoileRouge} </span>
+          {totalEtoile.map((valeur) =>
+            note >= valeur ? (
+              <span key={valeur.toString()}> {etoileRouge} </span>
             ) : (
-              <span key={rangeElem.toString()}> {etoileVide} </span>
+              <span key={valeur.toString()}> {etoileVide} </span>
             )
           )}
         </div>
