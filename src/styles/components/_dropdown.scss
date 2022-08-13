@@ -68,6 +68,9 @@
   margin-left: 18px;
   padding-bottom: 20px;
   color: $couleur-primaire;
+  @include mobile {
+    font-size: 12px;
+  }
 }
 .padding {
   padding-top: 200px;
