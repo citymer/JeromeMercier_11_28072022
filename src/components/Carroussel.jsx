@@ -6,8 +6,10 @@ const Carroussel = (logement) => {
   //tableau d'images
   const maison = logement.logement
   let photoCourante = 0
+  // renvoie 1
   let photoSuivante =
     photoCourante === maison?.length - 1 ? 0 : photoCourante + 1
+  // renvoie le nombre total d'images -1
   let photoPrecedente =
     photoCourante === 0 ? maison?.length - 1 : photoCourante - 1
 
