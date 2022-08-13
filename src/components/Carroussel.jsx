@@ -3,7 +3,7 @@ import precedent from '../assets/precedent.png'
 import suivant from '../assets/suivant.png'
 
 const Carroussel = (logement) => {
-  //tableau d'image
+  //tableau d'images
   const maison = logement.logement
   let photoCourante = 0
   let photoSuivante =
