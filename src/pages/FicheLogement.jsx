@@ -7,17 +7,17 @@ import useFetch from '../data/UseFetch'
 import Carroussel from '../components/Carroussel'
 import { useParams } from 'react-router-dom'
 import PresentationLocation from '../components/PresentationLocation'
+import Erreur404 from './Erreur404'
 
 const FicheLogement = () => {
+  const { data, error } = useFetch('/data/locationList.json')
   let { idLogement } = useParams()
 
-  const { data, error } = useFetch('/data/locationList.json')
   if (error) {
     return <span>Oups il y a eu un problème</span>
   }
-  if (data.length > 0) {
-    const logement = data.find((location) => location.id.includes(idLogement))
-
+  const logement = data.find((location) => location.id === idLogement)
+  if (data.length > 0 && logement !== undefined) {
     return (
       <div>
         <Header />
@@ -32,6 +32,8 @@ const FicheLogement = () => {
         <Footer />
       </div>
     )
+  } else {
+    return <Erreur404 />
   }
 }
 
