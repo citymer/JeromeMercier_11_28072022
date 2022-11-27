@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import './styles/index.scss'
 import Apropos from './pages/Apropos'
 import Erreur404 from './pages/Erreur404'
@@ -8,14 +8,14 @@ import Home from './pages/Home'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/fiche-logement/:idLogement" element={<FicheLogement />} />
         <Route path="*" element={<Erreur404 />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
