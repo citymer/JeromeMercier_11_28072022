@@ -1,5 +1,5 @@
 {
-  "homepage": ".",
+  "homepage": "https://citymer.github.io/JeromeMercier_11_28072022/#",
   "name": "kasa",
   "version": "0.1.0",
   "private": true,
@@ -21,8 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "clean-source": "rimraf README.md src webroot package.json"
   },
   "eslintConfig": {
     "extends": [
